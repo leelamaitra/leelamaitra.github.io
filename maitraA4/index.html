@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Adtile Fixed Nav</title>
+    <meta name="author" content="Adtile">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- note: Adtile & responsive-nav CSS adapted for use in COMP 126 at UNC-Chapel Hill --> 
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="js/responsive-nav.js"></script>
+  </head>
+      <nav class="nav-collapse">      
+        <h1> WELCOME! </h1>  
+        <ul>
+          <li class="menu-item"><a href="" data-scroll>home</a></li>
+          <li class="menu-item"><a href="" data-scroll>about</a></li>
+          <li class="menu-item"><a href="" data-scroll>contact</a></li>
+        </ul>
+      </nav>
+    
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+  
+  
+  <body>
+   <div class = "hello">
+    <h2> We're glad you're here. </h2> 
+    <p> Sign up below to learn more </p>  
+   <button class = "learn" type="submit">click me to learn more</button> 
+    </div>
+  </body>
+  
+  <fieldset> 
+    <div class="contact">
+  <div class="row">
+    <h2>Join our Mailing List</h2>
+  </div>
+  
+    <label for="first_name" class = name>first name</label>
+    <input type="text" id="first_name" name="first_name" placeholder = "John" required>
+    
+    <label for="last_name" class = name>last name</label>
+    <input type="text" id="last_name" name="last_name" placeholder = "Smith" required>
+    
+    <label for="email">email</label>
+    <input type="email" id="email" name="email" placeholder = "john.smith@gmail.com" required oninvalid="this.setCustomValidity('Please include an @ in the email address.')"
+    oninput="this.setCustomValidity('')">
+  
+   <button class = "submit" type="submit">Submit</button> 
+  </fieldset> 
+  <div class = "sunsets"> 
+    <img src= "/pics/sunset.jpg" alt = "sunset">   
+    <img src= "/pics/sunset2.jpeg" alt = "another sunset">
+    <img src= "/pics/sunset3.jpg" alt = "last sunset">
+</div> 
+
+<footer> © comp 126  </footer> 
+
+</html>
